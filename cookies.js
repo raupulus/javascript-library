@@ -4,30 +4,33 @@
  * @return {string}      Devuelve el valor de la cookie en un string o null
  */
 function getCookie(name){
-  var cname = name + "=";
-  var dc = document.cookie;
-  if (dc.length > 0) {
-    begin = dc.indexOf(cname);
-    if (begin != -1) {
-      begin += cname.length;
-      end = dc.indexOf(";", begin);
-      if (end == -1) end = dc.length;
-        return decodeURIComponent(dc.substring(begin, end));
+    var cname = name + "=";
+    var dc = document.cookie;
+    if (dc.length > 0) {
+        begin = dc.indexOf(cname);
+        if (begin != -1) {
+            begin += cname.length;
+            end = dc.indexOf(";", begin);
+            if (end == -1) end = dc.length;
+            return decodeURIComponent(dc.substring(begin, end));
+        }
     }
-  }
-  return null;
+    return null;
 }
 
-
-// Esta es una adaptación de la función de Dorcht para establecer una cookie
-// name - nombre de la cookie
-// value - valor de la cookie
-// [expires] - fecha de caducidad de la cookie (por defecto, el final de la sesi?n)
-// [path] - camino para el cual la cookie es válida (por defecto, el camino del documento que hace la llamada)
-// [domain] - dominio para el cual la cookie es válida (por defecto, el dominio del documento que hace la llamada)
-// [secure] - valor booleano que indica si la trasnmisión de la cookie requiere una transmisión segura
-// al especificar el valor null, el argumento tomará su valor por defecto
-
+/**
+ * Establece una cookie mediante los parámetros pasados a la función
+ * @param {string} name     Nombre de la cookie.
+ * @param {string} value    Valor de las cookies.
+ * @param {string} expires  Fecha de caducidad de la cookie (por defecto, el
+ *                          final de la sesión).
+ * @param {string} path     Camino donde se aplica esta cookie, por defecto
+ *                          el dominio del documento que realiza la llamada.
+ * @param {string} domain   Dominio para el cual la cookie es válida (por
+ *                          defecto, el del documento que hace la llamada).
+ * @param {Bool} secure     Indica si la trasnmisión de la cookie requiere una
+ *                          transmisión segura (HTTPS).
+ */
 function setCookie(name, value, expires, path, domain, secure) {
   document.cookie = name + "=" + encodeURIComponent(value) +
   ((expires == null) ? "" : "; expires=" + expires.toGMTString()) +

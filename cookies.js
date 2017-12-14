@@ -1,7 +1,8 @@
-// Esta es la función que usa Heinle para recuperar una cookie
-// name - nombre de la cookie deseada
-// devuelve un string conteniendo el valor de la cookie especificada o null si la cookie no existe
-
+/**
+ * Función para obtener una cookie
+ * @param  {string} name Recibe el nombre de la cookie
+ * @return {string}      Devuelve el valor de la cookie en un string o null
+ */
 function getCookie(name){
   var cname = name + "=";
   var dc = document.cookie;

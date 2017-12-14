@@ -26,7 +26,7 @@ function abrirVentana(origen, titulo, ancho, alto, top, left) {
 }
 
 /**
- * Tamaño de la ventana en un array devolviendo en la posición 0 el ancho y
+ * Devuelve  el tamaño de la ventana en un array, la posición 0 el ancho y
  * en la posición 1 el alto.
  * @param  {window}  ventana  Recibe la ventana como parámetro
  * @return {Array}            Devuelve un array con ancho y alto
@@ -36,12 +36,13 @@ function sizeVentana(ventana) {
 }
 
 /**
- * Devuelve la posición de la ventana
- * @param  {[type]} ventana [description]
- * @return {[type]}         [description]
+ * Devuelve la posición de la ventana en una array, la posición 0 es la
+ * separación desde el borde izquierdo y la posición 1 sobre la parte superior
+ * @param  {window}  ventana  [description]
+ * @return {Array}            Array que contiene la posición de la ventana
  */
 function posicionVentana(ventana) {
-
+    return [ventana.screenX, ventana.screenY];
 }
 
 function moverVentana() {

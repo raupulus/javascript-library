@@ -4,13 +4,13 @@
 
 /**
  * [abrirVentana description]
- * @param  {[type]} origen [description]
- * @param  {[type]} titulo [description]
- * @param  {[type]} ancho  [description]
- * @param  {[type]} alto   [description]
- * @param  {[type]} top    [description]
- * @param  {[type]} left   [description]
- * @return {[type]}        [description]
+ * @param  {String}   origen  Ruta al documento HTML para abrir
+ * @param  {String}   titulo  Nombre de la ventana
+ * @param  {Integer}  ancho   Ancho de la ventana
+ * @param  {Integer}  alto    Altura de la ventana
+ * @param  {Integer}  top     Separación respecto la parte superior
+ * @param  {Integer}  left    Separación respecto la parte izquierda
+ * @return {window}           Devuelve la nueva ventana
  */
 function abrirVentana(origen, titulo, ancho, alto, top, left) {
     ventana = window.open(

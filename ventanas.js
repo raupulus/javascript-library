@@ -26,12 +26,13 @@ function abrirVentana(origen, titulo, ancho, alto, top, left) {
 }
 
 /**
- * Tamaño de la ventana
- * @param  {[type]} ventana [description]
- * @return {[type]}         [description]
+ * Tamaño de la ventana en un array devolviendo en la posición 0 el ancho y
+ * en la posición 1 el alto.
+ * @param  {window}  ventana  Recibe la ventana como parámetro
+ * @return {Array}            Devuelve un array con ancho y alto
  */
 function sizeVentana(ventana) {
-
+    return [ventana.innerWidth, ventana.innerHeight];
 }
 
 /**
@@ -40,6 +41,10 @@ function sizeVentana(ventana) {
  * @return {[type]}         [description]
  */
 function posicionVentana(ventana) {
+
+}
+
+function redimensionarVentana(ventana) {
 
 }
 

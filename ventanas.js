@@ -24,3 +24,21 @@ function abrirVentana(origen, titulo, ancho, alto, top, left) {
 
     return ventana;
 }
+
+/**
+ * Tamaño de la ventana
+ * @param  {[type]} ventana [description]
+ * @return {[type]}         [description]
+ */
+function sizeVentana(ventana) {
+
+}
+
+/**
+ * Devuelve la posición de la ventana
+ * @param  {[type]} ventana [description]
+ * @return {[type]}         [description]
+ */
+function posicionVentana(ventana) {
+
+}

@@ -32,11 +32,11 @@ function getCookie(name){
  *                          transmisión segura (HTTPS).
  */
 function setCookie(name, value, expires, path, domain, secure) {
-  document.cookie = name + "=" + encodeURIComponent(value) +
-  ((expires == null) ? "" : "; expires=" + expires.toGMTString()) +
-  ((path == null) ? "" : "; path=" + path) +
-  ((domain == null) ? "" : "; domain=" + domain) +
-  ((secure == null) ? "" : "; secure");
+    document.cookie = name + "=" + encodeURIComponent(value) +
+    ((expires == null) ? "" : "; expires=" + expires.toGMTString()) +
+    ((path == null) ? "" : "; path=" + path) +
+    ((domain == null) ? "" : "; domain=" + domain) +
+    ((secure == null) ? "" : "; secure");
 }
 
 

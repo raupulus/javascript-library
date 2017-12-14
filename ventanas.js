@@ -42,3 +42,11 @@ function sizeVentana(ventana) {
 function posicionVentana(ventana) {
 
 }
+
+/**
+ * Cierra las ventanas pasadas
+ * @param  {array} ventanas [description]
+ */
+function cerrarVentana(...ventanas) {
+
+}

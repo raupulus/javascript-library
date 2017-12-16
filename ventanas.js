@@ -75,9 +75,12 @@ function redimensionarVentanaTo() {
 }
 
 /**
- * Cierra las ventanas pasadas
- * @param  {array} ventanas [description]
+ * Cierra todas las ventanas pasadas en la llamada
+ * @param  {array}  ventanas  Todos los parámetros que recibe los convierte en
+ *                            una lista iterable
  */
 function cerrarVentana(...ventanas) {
-
+    for (ventana of ventanas) {
+        ventana.close();
+    }
 }

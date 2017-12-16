@@ -70,6 +70,10 @@ function redimensionarVentana(ventana) {
 
 }
 
+function redimensionarVentanaTo() {
+
+}
+
 /**
  * Cierra las ventanas pasadas
  * @param  {array} ventanas [description]

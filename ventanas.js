@@ -56,8 +56,14 @@ function moverVentana(ventana, arriba, izquierda) {
     ventana.moveBy(arriba, izquierda);
 }
 
-function moverVentanaTo() {
-
+/**
+ * Mueve una ventana a un lugar concreto de la pantalla
+ * @param  {window}   ventana    Ventana a la que se aplicará
+ * @param  {Integer}  arriba     Distancia desde la parte superior
+ * @param  {Integer}  izquierda  Distancia desde la parte izquierda
+ */
+function moverVentanaTo(ventana, arriba, izquierda) {
+    ventana.moveTo(arriba, izquierda);
 }
 
 function redimensionarVentana(ventana) {

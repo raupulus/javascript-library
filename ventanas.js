@@ -49,6 +49,10 @@ function moverVentana() {
 
 }
 
+function moverVentanaTo() {
+
+}
+
 function redimensionarVentana(ventana) {
 
 }

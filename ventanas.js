@@ -45,8 +45,15 @@ function posicionVentana(ventana) {
     return [ventana.screenX, ventana.screenY];
 }
 
-function moverVentana() {
-
+/**
+ * Mueve una ventana pasada como parámetro los píxeles pasados como segundo
+ * parámetro, desde arriba y desde la izquierda.
+ * @param  {window}   ventana    Ventana a la que se aplicará
+ * @param  {Integer}  arriba     Número de píxeles desde la parte superior
+ * @param  {Integer}  izquierda  Número de píxeles desde la parte izquierda
+ */
+function moverVentana(ventana, arriba, izquierda) {
+    ventana.moveBy(arriba, izquierda);
 }
 
 function moverVentanaTo() {

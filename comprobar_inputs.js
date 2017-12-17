@@ -2,6 +2,11 @@
     Librería de funciones para limpiar campos de entrada de formularios
  */
 
+function comprobarCadena(cadena) {
+    var patron = new RegExp("^[a-záéíóúñ]+", "i");
+    return patron.test(cadena);
+}
+
 function comprobarNombre(nombre) {
     var patron = new RegExp("^[a-záéíóúñ]+", "i");
     return patron.test(nombre);

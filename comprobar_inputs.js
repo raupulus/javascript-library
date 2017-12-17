@@ -7,9 +7,9 @@ function comprobarNombre(nombre) {
     return patron.test(nombre);
 }
 
-function comprobarMail(mail) {
+function comprobarEmail(email) {
     var patron = new RegExp("^(http(s)?:\/\/)?([w]{3}[\.])?[a-z0-9]+[\.][a-z]{2,3}$");
-    return patron.test(mail);
+    return patron.test(email);
 }
 
 function comprobarEdad(edad) {
@@ -25,4 +25,9 @@ function comprobarTelefono(telefono) {
 function comprobarWeb(web) {
     var patron = new RegExp("^(http(s)?:\/\/)?([w]{3}[\.])?[a-z0-9]+[\.][a-z]{2,3}$");
     return patron.test(web);
+}
+
+function comprobarPassword(password) {
+    var patron = new RegExp("^[0-9a-zA-Z\,\._-]+$");
+    return patron.test(password);
 }

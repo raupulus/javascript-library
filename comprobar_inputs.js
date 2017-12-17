@@ -21,3 +21,8 @@ function comprobarTelefono(telefono) {
     var patron = new RegExp("^[0-9]{9}$");
     return patron.test(telefono);
 }
+
+function comprobarWeb(web) {
+    var patron = new RegExp("^(http(s)?:\/\/)?([w]{3}[\.])?[a-z0-9]+[\.][a-z]{2,3}$");
+    return patron.test(web);
+}

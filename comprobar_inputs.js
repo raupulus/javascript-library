@@ -7,6 +7,11 @@ function comprobarCadena(cadena) {
     return patron.test(cadena);
 }
 
+function comprobarCadenas(cadena) {
+    var patron = new RegExp("^[a-záéíóúñ]+(( [a-záéíóúñ]+)+)?$", "i");
+    return patron.test(cadena);
+}
+
 function comprobarNombre(nombre) {
     var patron = new RegExp("^[a-záéíóúñ]+", "i");
     return patron.test(nombre);

@@ -14,3 +14,7 @@ function generarAleatorios(cantidad) {
     }
     return aleatorios;
 }
+
+function redondearDecimales(numero, decimales) {
+    return numero.toFixed(4);
+}

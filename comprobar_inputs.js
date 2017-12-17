@@ -33,7 +33,7 @@ function comprobarTelefono(telefono) {
 }
 
 function comprobarWeb(web) {
-    var patron = new RegExp("^(http(s)?:\/\/)?([w]{3}[\.])?[a-z0-9]+[\.][a-z]{2,3}$");
+    var patron = new RegExp("^(http(s)?:\/\/)+([w]{3}[\.])+[a-z0-9]+[\.][a-z]{2,3}$");
     return patron.test(web);
 }
 

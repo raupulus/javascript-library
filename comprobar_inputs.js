@@ -41,3 +41,8 @@ function comprobarPassword(password) {
     var patron = new RegExp("^[0-9a-zA-Z\,\._-]+$");
     return patron.test(password);
 }
+
+function comprobarDNI(dni) {
+    var patron = new RegExp("^[0-9]{2}\.[0-9]{3}\.[0-9]{3}-[a-zA-Z]$");
+    return patron.test(dni);
+}

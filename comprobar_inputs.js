@@ -11,3 +11,8 @@ function comprobarMail(mail) {
     var patron = new RegExp("^(http(s)?:\/\/)?([w]{3}[\.])?[a-z0-9]+[\.][a-z]{2,3}$");
     return patron.test(mail);
 }
+
+function comprobarEdad(edad) {
+    var patron = new RegExp("^[0-9]{1,3}$", "i");
+    return patron.test(edad);
+}

@@ -16,3 +16,8 @@ function comprobarEdad(edad) {
     var patron = new RegExp("^[0-9]{1,3}$", "i");
     return patron.test(edad);
 }
+
+function comprobarTelefono(telefono) {
+    var patron = new RegExp("^[0-9]{9}$");
+    return patron.test(telefono);
+}

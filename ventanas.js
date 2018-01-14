@@ -38,7 +38,7 @@ function sizeVentana(ventana) {
 /**
  * Devuelve la posición de la ventana en una array, la posición 0 es la
  * separación desde el borde izquierdo y la posición 1 sobre la parte superior
- * @param  {window}  ventana  [description]
+ * @param  {window}  ventana  Recibe el objeto Window para dar su posición
  * @return {Array}            Array que contiene la posición de la ventana
  */
 function posicionVentana(ventana) {

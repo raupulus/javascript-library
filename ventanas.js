@@ -3,7 +3,7 @@
  */
 
 /**
- * [abrirVentana description]
+ * Crea una nueva instancia de una ventana con los parámetros pasados
  * @param  {String}   origen  Ruta al documento HTML para abrir
  * @param  {String}   titulo  Nombre de la ventana
  * @param  {Integer}  ancho   Ancho de la ventana

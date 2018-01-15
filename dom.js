@@ -86,9 +86,8 @@ function eliminarNodoId(id) {
 
 /**
  * Reemplaza un nodo por ID
- * @param  {[type]} id        Id del nodo a reemplzar
- * @param  {[type]} nodoNuevo Nodo que poner en
- * @return {[type]}           [description]
+ * @param  {String} id        Id del nodo a reemplzar
+ * @param  {Node} nodoNuevo Nodo que poner en
  */
 function reemplazarNodoId(id, nodoNuevo) {
     var nodoViejo = document.getElementById(id);

@@ -47,3 +47,19 @@ function crearNodo(elemento, clase, texto = '') {
     nuevoNodo.appendChild(nodoTexto);
     return nuevoNodo;
 }
+
+/**
+ * Crea un nuevo nodo y le asigna un id.
+ * @param  {String} elemento Etiqueta HTML para crear el nodo.
+ * @param  {String} id       Id para asignar a la etiqueta creada
+ * @param  {String} texto    Texto para incluir en el nodo texto.
+ * @return {Node}            Devuelve el nodo creado.
+ */
+function crearNodoId(elemento, id, texto) {
+    var nuevoNodo = document.createElement(elemento);
+    nuevoNodo.setAttribute('id', id);
+
+    var nodoTexto = document.createTextNode(texto);
+    nuevoNodo.appendChild(nodoTexto);
+    return nuevoNodo;
+}

@@ -74,3 +74,12 @@ function eliminarNodosClase(clase) {
         document.removeChild(nodosBorrar);
     }
 }
+
+/**
+ * Elimina todos los nodos del id pasada.
+ * @param  {String} id El id por la que filtrar para eliminar nodo.
+ */
+function eliminarNodoId(id) {
+    var nodoBorrar = document.getElementById(id);
+    document.removeChild(nodoBorrar);
+}

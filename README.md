@@ -25,3 +25,10 @@ Puedes ayudar a la ampliación o mejora de esta librería sugiriendo un cambio o
 - Añádete como colaborador/a
 - Solicita incorporar los cambios realizando un Pull Request al repositorio fuente.
 - Revisaremos que sea útil y funcione para aprobar su incorporación.
+
+## Colaboradores
+Lista de colaboradores del proyecto, añádete cuando colabores tu también
+
+Nombre  | GitHub    | Web
+:-------|:----------|:---------
+Raúl Caro Pastorino | [@fryntiz](https://github.com/fryntiz) | [www.fryntiz.es](http://www.fryntiz.es)

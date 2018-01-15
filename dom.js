@@ -83,3 +83,14 @@ function eliminarNodoId(id) {
     var nodoBorrar = document.getElementById(id);
     document.removeChild(nodoBorrar);
 }
+
+/**
+ * Reemplaza un nodo por ID
+ * @param  {[type]} id        Id del nodo a reemplzar
+ * @param  {[type]} nodoNuevo Nodo que poner en
+ * @return {[type]}           [description]
+ */
+function reemplazarNodoId(id, nodoNuevo) {
+    var nodoViejo = document.getElementById(id);
+    document.replaceChild(nodoViejo, nodoNuevo);
+}

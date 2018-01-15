@@ -63,3 +63,14 @@ function crearNodoId(elemento, id, texto) {
     nuevoNodo.appendChild(nodoTexto);
     return nuevoNodo;
 }
+
+/**
+ * Elimina todos los nodos de la clase pasada.
+ * @param  {String} clase Clase por la que filtrar para eliminar nodo.
+ */
+function eliminarNodosClase(clase) {
+    var nodosBorrar = document.getElementsByClassName(clase);
+    for (nodo of nodosBorrar) {
+        document.removeChild(nodosBorrar);
+    }
+}

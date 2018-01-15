@@ -31,3 +31,19 @@ function limpiar_nodos() {
     buscar();
     destruir();
 }
+
+/**
+ * Crea un nuevo nodo y le asigna una clase.
+ * @param  {String} elemento Etiqueta HTML para crear el nodo.
+ * @param  {String} clase    Clase para asignar a la etiqueta creada
+ * @param  {String} texto    Texto para incluir en el nodo texto.
+ * @return {Node}            Devuelve el nodo creado.
+ */
+function crearNodo(elemento, clase, texto = '') {
+    var nuevoNodo = document.createElement(elemento);
+    nuevoNodo.setAttribute('class', clase);
+
+    var nodoTexto = document.createTextNode(texto);
+    nuevoNodo.appendChild(nodoTexto);
+    return nuevoNodo;
+}

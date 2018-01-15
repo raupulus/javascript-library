@@ -31,3 +31,66 @@ function limpiar_nodos() {
     buscar();
     destruir();
 }
+
+/**
+ * Crea un nuevo nodo y le asigna una clase.
+ * @param  {String} elemento Etiqueta HTML para crear el nodo.
+ * @param  {String} clase    Clase para asignar a la etiqueta creada
+ * @param  {String} texto    Texto para incluir en el nodo texto.
+ * @return {Node}            Devuelve el nodo creado.
+ */
+function crearNodo(elemento, clase, texto = '') {
+    var nuevoNodo = document.createElement(elemento);
+    nuevoNodo.setAttribute('class', clase);
+
+    var nodoTexto = document.createTextNode(texto);
+    nuevoNodo.appendChild(nodoTexto);
+    return nuevoNodo;
+}
+
+/**
+ * Crea un nuevo nodo y le asigna un id.
+ * @param  {String} elemento Etiqueta HTML para crear el nodo.
+ * @param  {String} id       Id para asignar a la etiqueta creada
+ * @param  {String} texto    Texto para incluir en el nodo texto.
+ * @return {Node}            Devuelve el nodo creado.
+ */
+function crearNodoId(elemento, id, texto) {
+    var nuevoNodo = document.createElement(elemento);
+    nuevoNodo.setAttribute('id', id);
+
+    var nodoTexto = document.createTextNode(texto);
+    nuevoNodo.appendChild(nodoTexto);
+    return nuevoNodo;
+}
+
+/**
+ * Elimina todos los nodos de la clase pasada.
+ * @param  {String} clase Clase por la que filtrar para eliminar nodo.
+ */
+function eliminarNodosClase(clase) {
+    var nodosBorrar = document.getElementsByClassName(clase);
+    for (nodo of nodosBorrar) {
+        document.removeChild(nodosBorrar);
+    }
+}
+
+/**
+ * Elimina todos los nodos del id pasada.
+ * @param  {String} id El id por la que filtrar para eliminar nodo.
+ */
+function eliminarNodoId(id) {
+    var nodoBorrar = document.getElementById(id);
+    document.removeChild(nodoBorrar);
+}
+
+/**
+ * Reemplaza un nodo por ID
+ * @param  {[type]} id        Id del nodo a reemplzar
+ * @param  {[type]} nodoNuevo Nodo que poner en
+ * @return {[type]}           [description]
+ */
+function reemplazarNodoId(id, nodoNuevo) {
+    var nodoViejo = document.getElementById(id);
+    document.replaceChild(nodoViejo, nodoNuevo);
+}

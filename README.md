@@ -1,6 +1,9 @@
 # Javascript_Library
 Librerías de funciones para javascript con un propósito general, teniendo en cuenta que puedan ser reutilizadas cada función y además incorporada ya sea el script completo o solo determinada función a un proyecto.
 
+Este repositorio se encuentra alojado en:
+https://gitlab.com/fryntiz/javascript-library
+
 
 ## Condiciones para cada función
 - Tiene que ser con un objetivo concreto, no realizar varios (devolver un valor, realizar una operación, crear un elemento..) de forma que sea lo más legible y portable posible.
@@ -26,9 +29,17 @@ Puedes ayudar a la ampliación o mejora de esta librería sugiriendo un cambio o
 - Solicita incorporar los cambios realizando un Pull Request al repositorio fuente.
 - Revisaremos que sea útil y funcione para aprobar su incorporación.
 
-## Colaboradores
-Lista de colaboradores del proyecto, añádete cuando colabores tu también
+## Sobre los autores
 
-Nombre  | GitHub    | Web
-:-------|:----------|:---------
-Raúl Caro Pastorino | [@fryntiz](https://github.com/fryntiz) | [www.fryntiz.es](http://www.fryntiz.es)
+Nombre  |  GitLab   |  GitHub  |   Web
+:-------|:----------|:---------|:---------
+Raúl Caro Pastorino | [@fryntiz](https://gitlab.com/fryntiz) | [@fryntiz](https://github.com/fryntiz) | [https://fryntiz.es](https://fryntiz.es)
+
+Cuando contribuyas al repositorio, ¡recuerda añadir tus datos como autor!
+
+
+## Licencia
+
+Este repositorio incluye material libre con el que puedes hacer lo que prefieras correspondiendo con la licencia GPLv3 y respetando autoría/s
+
+Puedes consultar la licencia en el archivo adjunto [LICENSE](https://gitlab.com/fryntiz/javascript-library/blob/master/LICENSE)

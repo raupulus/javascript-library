@@ -39,7 +39,7 @@ function validarNombre(nombre) {
  * @return {Boolean}        Devuelve booleano según el resultado de validación
  */
 function validarEmail(email) {
-    var patron = new RegExp("^(http(s)?:\/\/)?([w]{3}[\.])?[a-z0-9]+[\.][a-z]{2,3}$");
+    var patron = new RegExp("^[a-z0-9]+[\@][a-z0-9]+[\.][a-z]{2,3}$");
     return patron.test(email);
 }
 

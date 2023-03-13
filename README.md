@@ -2,7 +2,7 @@
 Librerías de funciones para javascript con un propósito general, teniendo en cuenta que puedan ser reutilizadas cada función y además incorporada ya sea el script completo o solo determinada función a un proyecto.
 
 Este repositorio se encuentra alojado en:
-https://gitlab.com/fryntiz/javascript-library
+https://gitlab.com/raupulus/javascript-library
 
 
 ## Condiciones para cada función
@@ -33,7 +33,7 @@ Puedes ayudar a la ampliación o mejora de esta librería sugiriendo un cambio o
 
 Nombre  |  GitLab   |  GitHub  |   Web
 :-------|:----------|:---------|:---------
-Raúl Caro Pastorino | [@fryntiz](https://gitlab.com/fryntiz) | [@fryntiz](https://github.com/fryntiz) | [https://fryntiz.es](https://fryntiz.es)
+Raúl Caro Pastorino | [@raupulus](https://gitlab.com/raupulus) | [@raupulus](https://github.com/raupulus) | [https://raupulus.dev](https://raupulus.dev)
 
 Cuando contribuyas al repositorio, ¡recuerda añadir tus datos como autor!
 
@@ -42,4 +42,4 @@ Cuando contribuyas al repositorio, ¡recuerda añadir tus datos como autor!
 
 Este repositorio incluye material libre con el que puedes hacer lo que prefieras correspondiendo con la licencia GPLv3 y respetando autoría/s
 
-Puedes consultar la licencia en el archivo adjunto [LICENSE](https://gitlab.com/fryntiz/javascript-library/blob/master/LICENSE)
+Puedes consultar la licencia en el archivo adjunto [LICENSE](https://gitlab.com/raupulus/javascript-library/blob/master/LICENSE)
